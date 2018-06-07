@@ -1,1 +1,3 @@
-# carMaze
+# FastCarGame
+
+Vet cool spel
