@@ -42,6 +42,14 @@ public class score : MonoBehaviour {
         if (col.gameObject.name == "end") {
             running = false;
             playerScore = timer;
+
+            if (playerScore < highScore)
+            {
+                highScore = playerScore;
+                PlayerPrefs.SetFloat("Highscore", highScore);
+                highScoreText.text = highScore.ToString();
+            }
+
         }
     }
 
@@ -52,12 +60,7 @@ public class score : MonoBehaviour {
             timer += Time.deltaTime;
             scoreText.text = timer.ToString();
         }
-        if (playerScore < highScore && running == true)
-        {
-            highScore = playerScore;
-            PlayerPrefs.SetFloat("Highscore", highScore);
-            highScoreText.text = highScore.ToString();
-        }
+
     }
 }
 
