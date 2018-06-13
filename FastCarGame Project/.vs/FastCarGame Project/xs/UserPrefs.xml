@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{130374A3-0087-93D2-6B47-20E6B737F96E}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/score.cs">
+    <Files>
+      <File FileName="Assets/Scripts/score.cs" Line="51" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FastCarGame_220Project PreferredExecutionTarget="Unity.Editor" />
+</Properties>

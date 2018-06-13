@@ -47,6 +47,7 @@ public class score : MonoBehaviour {
             {
                 highScore = playerScore;
                 PlayerPrefs.SetFloat("Highscore", highScore);
+                highScoreText.color = Color.green;
                 highScoreText.text = highScore.ToString();
             }
 
