@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class score : MonoBehaviour {
 
+    public gameReset reset;
+
     public float playerScore;
     public float highScore;
     public float timer = 0;
@@ -14,6 +16,8 @@ public class score : MonoBehaviour {
 
     public Text scoreText;
     public Text highScoreText;
+
+    
 
     public void Start()
     {
@@ -30,6 +34,7 @@ public class score : MonoBehaviour {
             highScoreText.text = highScore.ToString();
         }
 
+        reset = GetComponent<gameReset>();
         
     }
 
@@ -61,6 +66,11 @@ public class score : MonoBehaviour {
             timer += Time.deltaTime;
             scoreText.text = timer.ToString();
         }
+
+		if(Input.GetKeyDown( "p" )){
+            PlayerPrefs.SetFloat("Highscore", 1337);
+            reset.hardRestartGame();
+		}
 
     }
 }
