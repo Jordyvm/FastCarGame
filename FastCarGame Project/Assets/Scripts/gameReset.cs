@@ -13,7 +13,7 @@ public class gameReset : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-		if (col.gameObject.name == "obstacle")
+        if (col.gameObject.tag == "Obstacle")
         {
             hardRestartGame();
 		}

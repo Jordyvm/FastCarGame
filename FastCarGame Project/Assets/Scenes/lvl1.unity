@@ -164,6 +164,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
   m_IsPrefabParent: 0
@@ -213,6 +217,10 @@ Prefab:
     - target: {fileID: 4812236131950728, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
       propertyPath: m_LocalScale.z
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
@@ -487,6 +495,10 @@ Prefab:
       propertyPath: m_Name
       value: obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
   m_IsPrefabParent: 0
@@ -545,6 +557,10 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
@@ -694,6 +710,10 @@ Prefab:
     - target: {fileID: 4812236131950728, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
       propertyPath: m_LocalScale.z
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
@@ -892,6 +912,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
   m_IsPrefabParent: 0
@@ -945,6 +969,10 @@ Prefab:
     - target: {fileID: 4812236131950728, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
       propertyPath: m_LocalScale.z
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
@@ -1073,6 +1101,10 @@ Prefab:
     - target: {fileID: 4812236131950728, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
       propertyPath: m_LocalScale.z
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
@@ -1213,6 +1245,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1027264936128830, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f6753bc73e4458d991050afa90bd11, type: 2}
   m_IsPrefabParent: 0
@@ -1325,6 +1361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   z: 0
+  fSpeed: 300
+  rSpeed: 10
 --- !u!65 &2126217187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1430,6 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781cbce9478c4c14e8005f942ba2b5a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset: {fileID: 0}
   playerScore: 0
   highScore: 0
   timer: 0
